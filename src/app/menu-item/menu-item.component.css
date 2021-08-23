@@ -1,0 +1,8 @@
+a {
+  color: black;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}

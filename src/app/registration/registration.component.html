@@ -1,0 +1,33 @@
+<h1 class="text-center">Student Registration Page</h1>
+<div fxLayoutAlign="center center"fxFlexFill>
+    <mat-card fxFlex="25">
+      <form>
+        <div class="mb-3">
+          <label for="exampleUserName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleUserName" placeholder="Admin"/>
+        </div>
+        <div class="mb-3">
+          <label for="rollno" class="form-label">RollNo</label>
+          <input type="text" class="form-control" id="rollno"/>
+        </div>
+        <div class="mb-3">
+          <label for="Section" class="form-label">Section</label>
+          <input type="text" class="form-control" id="Section"/>
+        </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="admin@gmail.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1"/>
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <input type="submit" (click)="registerStudent()">
+      </form>
+    </mat-card>
+    </div>
