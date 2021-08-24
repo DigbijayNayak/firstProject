@@ -11,6 +11,7 @@ import { UserService } from './user.service';
 
 export class AppComponent {
   title = 'firstproject';
+  num: number=8;
   constructor(private http: HttpClient, private userservice: UserService) {
     let user = this.userservice.getuserdata().subscribe(data=>{
       console.log(data);

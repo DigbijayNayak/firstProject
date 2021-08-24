@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListPageComponent } from './list-page.component';
+import { HttpClientTestingModule} from '@angular/common/http/testing';
 
 describe('ListPageComponent', () => {
   let component: ListPageComponent;
@@ -8,6 +9,7 @@ describe('ListPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       declarations: [ ListPageComponent ]
     })
     .compileComponents();
