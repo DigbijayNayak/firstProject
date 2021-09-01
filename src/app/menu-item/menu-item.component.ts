@@ -23,5 +23,8 @@ export class MenuItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  sum(){
+    return 20;
+  }
 
 }

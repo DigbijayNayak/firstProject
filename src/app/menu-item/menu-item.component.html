@@ -1,5 +1,6 @@
-<div id="navbar">
+<div id="navbar" [ngClass]="{'active': 'isActive', 'disabled': 'isDisabled'}">
     <div class="nav-item active" *ngFor="let obj of menuItemsChild">
-        <a class="nav-link text-uppercase" (click)="menuClicked(obj)" href="javascript:void(0)">{{obj}}</a>
+        <a class="nav-link text-uppercase" (click)="menuClicked(obj)" href="javascript:void(0)"><b>{{obj}}</b></a>
     </div>
 </div>
+ 

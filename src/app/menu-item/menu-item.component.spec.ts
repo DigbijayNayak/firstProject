@@ -22,4 +22,7 @@ describe('MenuItemComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it(`testing function`, () => {
+    expect(component.sum()).toBe(20);
+  });
 });

@@ -11,12 +11,12 @@ import { ListPageComponent } from './list-page/list-page.component';
 
 const routes: Routes = [
   // {path: '', redirectTo: '/login'},
-  {path:'', redirectTo:'/home', pathMatch:'full'},
   {path: 'home', component:HomeComponent},
   {path: 'about', component:AboutComponent},
   {path:'login',component:LoginComponent},
   {path:'registration',component:RegistrationComponent},
-  {path:'list', component:ListPageComponent}
+  {path:'list', component:ListPageComponent},
+  {path:'', redirectTo:'/home', pathMatch:'full'}
 ];
 
 @NgModule({
