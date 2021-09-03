@@ -1,19 +1,20 @@
-{{data | json}}
 
-<h1 style="text-align:center">Student list</h1>
-<table align="center" border="3px" cellpadding=20 cellspacing=20>
-    <thead>
-        <th>Roll No  </th>
-        <th>Name  </th>
-        <th>Section</th>
+<body>
+    <h1 style="text-align:center">Student list</h1>
+    <table cellpadding="20px" cellspacing="20px" class="center">
+        <thead>
+            <th>Roll No  </th>
+            <th>Name  </th>
+            <th>Section</th>
         <!-- <th>Gender</th> -->
-    </thead>
-    <tbody>
-        <tr *ngFor="let obj of data">
-            <td>{{obj.rollno}}</td>
-            <td>{{obj.username}}</td>
-            <td>{{obj.section}}</td>
-            <!-- <td>{{data.gender}}</td> -->
-        </tr>
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            <tr *ngFor="let obj of data">
+                <td>{{obj.rollno}}</td>
+                <td>{{obj.username}}</td>
+                <td>{{obj.section}}</td>
+                <!-- <td>{{data.gender}}</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>

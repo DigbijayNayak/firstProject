@@ -1,21 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="D:\firstProject\src\app\app.component.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <div class="logo"><img src="https://cdn.dribbble.com/users/925386/screenshots/14385746/media/661c7ef79b912507f9a5a0ab9fb6e6a8.png?compress=1&resize=400x300" alt="logo"></div>
+      <li><a routerLink="home">Home</a></li>
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="login">Login</a></li>
+      <li><a routerLink="registration">Register</a></li>
+      <li><a routerLink="list">List</a></li>
+      <li><a>Gallery</a></li>
+      <li><a>Contact</a></li>
+      <li></li>
+      <li></li>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </ul>
+    
+  </nav>
+  
+  <router-outlet></router-outlet>
+  
+</body>
+</html>
 
-<div>
-  <details>
-    <summary></summary>
-    <nav class="menu">
-      <a routerLink="home">Home</a>
-      <a routerLink="about">About</a>
-      <a routerLink="login">Login</a>
-      <a routerLink="registration">Registration</a>
-      <a routerLink="list">List</a>
-      <a href="#link">Gallery</a>
-      <a href="#link">Contact</a>
-      <!-- <app-menu-item [menuItemsChild]="menuItems" (menuItemName)="recievingMenuName($event)"></app-menu-item> -->
-    </nav>
-    <button (click) = "resetButton()">Click Me</button>
-  </details>
-    <router-outlet></router-outlet>
-</div>
+
+
+
+
+
+
+
+
+<!-- <body>
+  <div>
+    <details>
+      <summary></summary>
+      <nav class="menu">
+        <a routerLink="home">Home</a>
+        <a routerLink="about">About</a>
+        <a routerLink="login">Login</a>
+        <a routerLink="registration">Registration</a>
+        <a routerLink="list">List</a>
+        <a href="#link">Gallery</a>
+        <a href="#link">Contact</a>
+        <app-menu-item [menuItemsChild]="menuItems" (menuItemName)="recievingMenuName($event)"></app-menu-item>
+      </nav>
+      <button (click) = "resetButton()">Click Me</button>
+    </details>
+      <router-outlet></router-outlet>
+  </div>
+</body> -->
 
 
 <!-- <nav>

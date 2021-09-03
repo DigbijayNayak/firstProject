@@ -1,4 +1,31 @@
-<h1 class="text-center">Student Registration Page</h1>
+<div class="sign-up-card">
+  <h3>Student Registration</h3>
+  <div class="input-div">
+    <label for="name">Name</label>
+    <input type="text" placeholder="Digbijay Nayak" required/>
+  </div>
+  <div class="input-div">
+    <label for="rollno">RollNo</label>
+    <input type="text" placeholder="12345" />
+  </div>
+  <div class="input-div">
+    <label for="section">Section</label>
+    <input type="text" placeholder="A" required />
+  </div>
+  <!-- <div class="input-div">
+    <label for="Email">Email</label>
+    <input type="email" placeholder="Email" />
+  </div>
+  <div class="input-div">
+    <label for="Password">Password</label>
+    <input type="password" placeholder="Email" />
+  </div> -->
+  <div class="btn" (click)="registerStudent()">Register</div>
+  <!-- <p>Don't have account? <a href="#">Sign Up</a></p> -->
+</div>
+
+<!-- <body>
+  <h1 class="text-center">Student Registration Page</h1>
 <div fxLayoutAlign="center center"fxFlexFill>
     <mat-card fxFlex="25">
       <form>
@@ -15,7 +42,7 @@
           <input type="text" class="form-control" id="Section"/>
         </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <label for="exampleInputEmail1" class="form-label">Email Id</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="admin@gmail.com" required>
           </div>
           <div class="mb-3">
@@ -31,3 +58,4 @@
       </form>
     </mat-card>
     </div>
+</body> -->

@@ -1,43 +1,80 @@
+<div class="sign-up-card">
+  <h3>Log In</h3>
+  <div class="input-div">
+      <label for="name">User Name</label>
+      <input type="text" placeholder="Admin" [(ngModel)]="username">
+  </div>
+  <div class="input-div">
+      <label for="Password">Password</label>
+      <input type="password" placeholder="xxxxxxxx" [(ngModel)]="password">
+  </div>
+  <div class="btn" (click)="logInUser()">Log In</div>
+  <!-- <p>Don't have account? <a href="#">Sign Up</a></p> -->
+</div>
 
-<h1 class="text-center">Student Login Page</h1>
-<div fxLayoutAlign="center center"fxFlexFill>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
+  <h1 class="text-center">Student Login Page</h1>
+  <div fxLayoutAlign="center center" fxFlexFill>
     <mat-card fxFlex="25">
       <form>
         <div class="mb-3">
           <label for="exampleUserName" class="form-label">User Name</label>
-          <input type="text" class="form-control" id="exampleUserName" placeholder="Admin" name="username" [(ngModel)]="username"/>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleUserName"
+            placeholder="Admin"
+            name="username"
+            [(ngModel)]="username"
+          />
         </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="admin@gmail.com" required>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password"/>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <input type="submit" (click)= logInUser()>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="admin@gmail.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="password"
+            [(ngModel)]="password"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <input type="submit" (click)="logInUser()" />
       </form>
     </mat-card>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
+</body> -->
 
 <!-- <div fxLayoutAlign="center center" fxFlexFill class="main-div">
   <mat-card fxFlex="25">
@@ -54,4 +91,3 @@
     </form>
   </mat-card>
 </div> -->
-

@@ -1,3 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+.navbar{
+  display: flex;
+}
+
+.nav-list{
+  width: 100%;
+  padding-top: 0%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  
+}
+
+.nav-list a{
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.nav-list a:hover{
+  color: blue;
+}
+
+/* .background{
+  background: rgba(0,0,0,0.7) url(http://d279m997dpfwgl.cloudfront.net/wp/2017/08/yale-1000x667.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+} */
+
+.nav-list li{
+  list-style: none;
+  padding: 20px 25px;
+}
+.nav-list li a:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
 :root {
   --primColor: #dcdcdc;
   --secoColor: #555555;
@@ -114,4 +177,4 @@ details[open]::before {
   100% {
     opacity: 0;
   }
-}
+}  */

@@ -1,0 +1,22 @@
+/* body{
+    background: url(); 
+    background-image: url(https://cdn.pixabay.com/photo/2020/09/03/05/47/student-5540227_960_720.jpg);
+    height: 100%;
+    width: 100%;
+} */
+
+#bg {
+    top: 0; 
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color:rgb(167, 108, 32); */
+    color: black;
+    font-size: 50px;
+  }
