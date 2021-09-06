@@ -22,6 +22,9 @@ import { ListPageComponent } from './list-page/list-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UserService } from './user.service';
 import { MenuItemComponent } from './menu-item/menu-item.component';
+import { SignupComponent } from './signup/signup.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes:Routes=[
   {path:'', redirectTo:'/home', pathMatch:'full'},
@@ -45,6 +48,9 @@ const appRoutes:Routes=[
     RegistrationComponent,
     ListPageComponent,
     MenuItemComponent,
+    SignupComponent,
+    GalleryComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,14 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ListPageComponent } from './list-page/list-page.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   // {path: '', redirectTo: '/login'},
   {path: 'home', component:HomeComponent},
   {path: 'about', component:AboutComponent},
   {path:'login',component:LoginComponent},
+  {path:'sign',component:SignupComponent},
   {path:'registration',component:RegistrationComponent},
   {path:'list', component:ListPageComponent},
   {path:'', redirectTo:'/home', pathMatch:'full'}

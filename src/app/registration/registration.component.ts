@@ -21,10 +21,10 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
   }
   registerStudent(){
-    // this.http.post("https://localhost:44362/StudentDetails/SaveRecord",this.stdEntity).subscribe(
-    //   posts=>{},
-    //   error=>{}
-    // )
+    this.http.post("https://localhost:44362/StudentDetails/SaveRecord",this.stdEntity).subscribe(
+      posts=>{},
+      error=>{}
+    )
     this.router.navigate(["list"]);
   }
 

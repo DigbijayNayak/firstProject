@@ -17,21 +17,21 @@ export class AppComponent {
       console.log(data);
     });
   }
-  menuItems: Array<string> = ["Home", "About", "login", "registration", "list", "Gallery"];
-  boolv: boolean = true;
-  recievingMenuName(eventmenuname:string){
-    console.log("This is from parent component", eventmenuname);
-  }
+  // menuItems: Array<string> = ["Home", "About", "login", "registration", "list", "Gallery"];
+  // boolv: boolean = true;
+  // recievingMenuName(eventmenuname:string){
+  //   console.log("This is from parent component", eventmenuname);
+  // }
 
-  resetButton(){
-    this.boolv = !this.boolv;
-    if(this.boolv){
-      this.menuItems = ["Home", "About", "login", "registration", "list", "Gallery"];
-    }
-    else{
-      this.menuItems = [];
-    }
-  }
+  // resetButton(){
+  //   this.boolv = !this.boolv;
+  //   if(this.boolv){
+  //     this.menuItems = ["Home", "About", "login", "registration", "list", "Gallery"];
+  //   }
+  //   else{
+  //     this.menuItems = [];
+  //   }
+  // }
 
   studentObj:Array<StudentEntity> = [{
     username: "Sunil",

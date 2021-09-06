@@ -10,7 +10,10 @@ export class UserService{
 
     }
     public getuserdata(){
-        let apiurl = "https://localhost:44362/StudentDetails/SaveRecord";
+        let apiurl = "https://localhost:44362/StudentDetails/GetUserDetails";
         return this.http.get(apiurl);
+    }
+    public postuserdata(){
+        
     }
 }
