@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { UserDetails } from "src/entity/userdetails.entity";
 
 @Injectable({
     providedIn: 'root'
@@ -10,10 +11,16 @@ export class UserService{
 
     }
     public getuserdata(){
-        let apiurl = "https://localhost:44362/StudentDetails/GetUserDetails";
+        let apiurl = "https://localhost:44362/StudentDetails/GetUser";
         return this.http.get(apiurl);
     }
-    public postuserdata(){
-        
+    // users :Array<UserDetails>= [];
+    users!: boolean;
+    public postuserdata(obj: any){
+        return this.http.post("https://localhost:44362/StudentDetails/GetUser", obj).subscribe(  
+      (data:any) => {  
+       this.users = data; //as string [];  
+      },
+      error=>{})
     }
 }

@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import { RegisterComponent } from '../Data/register.component';
 import { RegistrationComponent } from '../registration/registration.component';
 import { HttpClient } from '@angular/common/http';
-
+import { UserDetails } from 'src/entity/userdetails.entity';
+import { UserService } from '../user.service';
 
 
 @Component({
@@ -15,21 +16,25 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent implements OnInit {
   username!:string;
   password!: string;
-  constructor(private http: HttpClient, private routers:Router) { }
-
+  userobj: UserDetails = new UserDetails();
+  alert: boolean = false;
+  constructor(private http: HttpClient, private routers:Router, public service: UserService) { }
+  ngOnInit(): void {
+    
+  }
   logInUser(){
-    // this.http.get("").subscribe(posts=>{
-    //   console.log(posts);
-    // })
-    if(this.username == "Admin" && this.password == "Password"){
-      this.routers.navigate(['registration']);
-      console.log("Welcome");
+    this.userobj.User_id = 0;
+    this.userobj.Email_id = '';
+    this.userobj.User_name = this.username;
+    this.userobj.Password = this.password;
+    let res = this.service.postuserdata(this.userobj);
+    if(res){
+      this.alert = true;
     }
     else{
-      console.log("User Unauthorized");
+      this.alert = false;
     }
-  }
-  ngOnInit(): void {
+    
   }
   
 }

@@ -14,11 +14,12 @@ export class SignupComponent implements OnInit {
 
 
   constructor(private http: HttpClient, private routers:Router) { }
-
   ngOnInit(): void {
+    
+    
   }
   signUpUser(){
-    console.log("Sign up Successfully");
+    // this.http.post()
   }
 
 }
