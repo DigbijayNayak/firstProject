@@ -26,6 +26,7 @@ import { SignupComponent } from './signup/signup.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 const appRoutes:Routes=[
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path: 'home', component:HomeComponent},
@@ -63,7 +64,8 @@ const appRoutes:Routes=[
     MatToolbarModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

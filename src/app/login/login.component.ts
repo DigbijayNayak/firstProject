@@ -14,7 +14,7 @@ import { UserService } from '../user.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  username!:string;
+  userid!:number;
   password!: string;
   userobj: UserDetails = new UserDetails();
   alert: boolean = false;
@@ -23,18 +23,16 @@ export class LoginComponent implements OnInit {
     
   }
   logInUser(){
-    this.userobj.User_id = 0;
+    this.userobj.User_id = this.userid;
     this.userobj.Email_id = '';
-    this.userobj.User_name = this.username;
+    this.userobj.User_name = '';
     this.userobj.Password = this.password;
-    let res = this.service.postuserdata(this.userobj);
+    let res = this.service.postuserdata(this.userobj);    
     if(res){
       this.alert = true;
     }
     else{
       this.alert = false;
-    }
-    
-  }
-  
+    }   
+  }  
 }

@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ListPageComponent } from './list-page/list-page.component';
 import { SignupComponent } from './signup/signup.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   // {path: '', redirectTo: '/login'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'sign',component:SignupComponent},
   {path:'registration',component:RegistrationComponent},
   {path:'list', component:ListPageComponent},
+  {path:'gallery', component:GalleryComponent},
   {path:'', redirectTo:'/home', pathMatch:'full'}
 ];
 

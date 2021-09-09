@@ -1,26 +1,28 @@
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Success !</strong> Your Data has been entered Successfully.
+</div>
 <div class="sign-up-card">
-    <h3>Sign Up</h3>
-    <div class="input-div">
-        <label for="name">User Name</label>
-        <input type="text" placeholder="User Name">
-    </div>
-    <div class="input-div">
-        <label for="id">User Id</label>
-        <input type="text" placeholder="User Id">
-    </div>
-    <div class="input-div">
-        <label for="id">Email Id</label>
-        <input type="email" placeholder="Email Id">
-    </div>
-
-    <div class="input-div">
-        <label for="Password">Password</label>
-        <input type="password" placeholder="Password">
-    </div>
-    <div class="input-div">
-        <label for="confirm">Confirm Password</label>
-        <input type="password" placeholder="Confirm Password">
-    </div>
-    <div class="btn" (click)="signUpUser()">Sign Up</div>
-    <p>Already have account? <a href="login">Log In</a></p>
+  <h3>Sign Up</h3>
+  <div class="input-div">
+    <label for="id">User Id</label>
+    <input type="number" placeholder="User Id" [(ngModel)]="userid"/>
   </div>
+  <div class="input-div">
+    <label for="name">User Name</label>
+    <input type="text" placeholder="User Name" [(ngModel)]="username"/>
+  </div>
+  <div class="input-div">
+    <label for="id">Email Id</label>
+    <input type="email" placeholder="Email Id" [(ngModel)]="emailid"/>
+  </div>
+
+  <div class="input-div">
+    <label for="Password">Password</label>
+    <input type="password" placeholder="Password" [(ngModel)]="password"/>
+  </div>
+  <div class="btn" (click)="signUpUser()">Sign Up</div>
+  <p>Already have account? <a href="login">Log In</a></p>
+</div>

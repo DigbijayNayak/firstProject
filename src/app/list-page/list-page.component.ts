@@ -15,13 +15,13 @@ export class ListPageComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.getuserdata();
+    // this.getuserdata();
   }
-  getuserdata(){
-    this.userservice.getuserdata().subscribe(posRes=>{
-      this.data = posRes;
-    });
-  }
+  // getuserdata(){
+  //   this.userservice.getuserdata().subscribe(posRes=>{
+  //     this.data = posRes;
+  //   });
+  // }
 
 }
 

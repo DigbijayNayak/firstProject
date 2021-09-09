@@ -1,14 +1,19 @@
-<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+<div *ngIf= "alert; else elseblock" class="alert alert-success alert-dismissible fade show" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
   <strong>Success !</strong> Your Data has been entered Successfully.
 </div>
+<ng-template #elseblock>
+  <div>
+    Sorry! Same User_id is already available.
+  </div>
+</ng-template>
 <div class="sign-up-card">
   <h3>Log In</h3>
   <div class="input-div">
-      <label for="name">User Name</label>
-      <input type="text" placeholder="User Name" [(ngModel)]="username">
+      <label for="name">User Id</label>
+      <input type="number" placeholder="User Id" [(ngModel)]="userid">
   </div>
   <div class="input-div">
       <label for="Password">Password</label>
